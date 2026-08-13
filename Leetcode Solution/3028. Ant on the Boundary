@@ -1,0 +1,14 @@
+class Solution(object):
+    def returnToBoundaryCount(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        sum = 0
+        count = 0
+        for n in nums:
+            sum = sum + n
+            if sum == 0:
+                count = count + 1
+        return count
+        
