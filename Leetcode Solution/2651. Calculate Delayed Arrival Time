@@ -1,0 +1,13 @@
+class Solution(object):
+    def findDelayedArrivalTime(self, arrivalTime, delayedTime):
+        """
+        :type arrivalTime: int
+        :type delayedTime: int
+        :rtype: int
+        """
+        totaltime = arrivalTime + delayedTime
+        if totaltime >= 24 :
+            totaltime = totaltime -24
+            return totaltime 
+        return  totaltime
+        
